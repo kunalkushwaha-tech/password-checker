@@ -18,7 +18,7 @@ if any(char in special_chars for char in password):
     score += 1
 
 strength = (score / 5) * 100
-print("Strength:", strength, "%")
+print(f"Strength: {strength}%")
 
 if score <= 2:
     print("Weak Password ❌")
